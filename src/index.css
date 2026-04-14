@@ -1,0 +1,43 @@
+:root {
+  --bg: #f5f0e8;
+  --bg-card: #fffdf7;
+  --ink: #1a1209;
+  --ink-light: #6b5c40;
+  --accent: #c8431e;
+  --accent-soft: #f4d5cc;
+  --gold: #d4a017;
+  --gold-light: #f9edcc;
+  --border: #d6c9af;
+  --shadow: 0 4px 20px rgba(26, 18, 9, 0.10);
+  --shadow-lg: 0 12px 40px rgba(26, 18, 9, 0.15);
+  --radius: 4px;
+  --radius-lg: 12px;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(212, 160, 23, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 90%, rgba(200, 67, 30, 0.06) 0%, transparent 50%);
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
